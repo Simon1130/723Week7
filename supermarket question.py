@@ -16,3 +16,6 @@ class Supermarket:
         self.foods += amount
         print(self.foods)
         
+    def selling_foods(self, foods, amount):
+        self.foods -= amount
+        print(self.foods)
