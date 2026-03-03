@@ -15,11 +15,14 @@ class Supermarket:
         self.fresh_foods = fresh_foods
         self.vegatables = vegatables
         self.currency = currency
-        
+
+#Index 0 should be amount, 1 should be price
     def buy_in_stock(self, foods, amount):
-        self.foods[1] += amount
+        self.foods[0] += amount
+        self.currency - self.foods[1] * amount
         print(self.foods)
         
     def selling_foods(self, foods, amount):
-        self.foods -= amount
+        self.foods[0] -= amount
+        self.currency + self.foods * amount
         print(self.foods)
