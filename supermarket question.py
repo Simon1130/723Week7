@@ -26,3 +26,6 @@ class Supermarket:
         self.foods[0] -= amount
         self.currency + self.foods * amount
         print(self.foods)
+    
+    def check_currency(self):
+        print(self.currency)
